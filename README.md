@@ -25,9 +25,9 @@ Datapath includes padding block and core block.
 - The core block include Message scheduler to generate words for encryption computation and the hash computation block used to encrypt
 
 # Verify
-- Structure of Verify
+- Structure of Verify\
 ![verify](https://github.com/sonce139/SHA256-Verilog/blob/main/img/verify.png)
-- Structure of Testbench
+- Structure of Testbench\
 ![testbench](https://github.com/sonce139/SHA256-Verilog/blob/main/img/testbench.png)
 
 # How to run
