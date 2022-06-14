@@ -24,6 +24,12 @@ Datapath includes padding block and core block.
 - The padding block will be responsible for writing input message, bit "1", k bits "0" and length of input message in the register file.
 - The core block include Message scheduler to generate words for encryption computation and the hash computation block used to encrypt
 
+# Verify
+- Structure of Verify
+![verify](https://github.com/sonce139/SHA256-Verilog/blob/main/img/verify.png)
+- Structure of Testbench
+![testbench](https://github.com/sonce139/SHA256-Verilog/blob/main/img/testbench.png)
+
 # How to run
 - Use command `python SHA256.py -m your_input` to run algorithm with input you want.
 - Use command `python SHA256.py -g pre` to run algorithm with input file `messages.txt` with each line in the file will be a corresponding input. Mode `-g post` is similar to mode pre.
@@ -32,7 +38,10 @@ Datapath includes padding block and core block.
 - The result after running pre-synthesis and post-synthesis on modelsim is `hardware_results.txt` and saved in the respective folder as above.
 
 # Result
-
+- After running the simulation with ModelSim, we will compare 2 files `software_results.txt` and `hardware_results.txt`.
+- Here are the frequency and resource consumption results from the Quartus report (board Cyclone II)
+![frequency](https://github.com/sonce139/SHA256-Verilog/blob/main/img/frequency.png)
+![resource](https://github.com/sonce139/SHA256-Verilog/blob/main/img/resource.png)
 
 # Team member:
 |No.| Full name             |Student ID     |Github|
